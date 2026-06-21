@@ -1,0 +1,41 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a231b"/>
+      <stop offset="1" stop-color="#0b0f0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e3bb5d"/>
+      <stop offset="1" stop-color="#c9a24b"/>
+    </linearGradient>
+    <linearGradient id="coin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3d98a"/>
+      <stop offset="1" stop-color="#c9a24b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <rect x="14" y="14" width="484" height="484" rx="86" fill="none" stroke="#c9a24b" stroke-width="6" opacity="0.35"/>
+
+  <!-- book / ledger -->
+  <g>
+    <path d="M120 150 C120 134 132 124 148 124 L300 124 C320 124 336 140 336 160 L336 372 C336 388 322 398 308 396 L150 376 C132 374 120 360 120 342 Z" fill="#f3ecda"/>
+    <path d="M148 124 L148 376" stroke="#d9d0b8" stroke-width="4"/>
+    <line x1="172" y1="180" x2="300" y2="190" stroke="#c9a24b" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+    <line x1="172" y1="216" x2="300" y2="222" stroke="#c9a24b" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+    <line x1="172" y1="252" x2="280" y2="256" stroke="#c9a24b" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+  </g>
+
+  <!-- coin stack -->
+  <g>
+    <ellipse cx="356" cy="372" rx="64" ry="20" fill="url(#coin)"/>
+    <ellipse cx="356" cy="354" rx="64" ry="20" fill="url(#coin)"/>
+    <ellipse cx="356" cy="336" rx="64" ry="20" fill="url(#coin)"/>
+    <ellipse cx="356" cy="318" rx="64" ry="20" fill="url(#gold)" stroke="#fff3d6" stroke-width="2"/>
+    <text x="356" y="326" text-anchor="middle" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#3a2f12">₸</text>
+  </g>
+
+  <!-- small upward arrow / growth -->
+  <path d="M392 270 L420 240 L448 268" stroke="#5fae6f" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="420" y1="240" x2="420" y2="296" stroke="#5fae6f" stroke-width="10" stroke-linecap="round"/>
+</svg>
